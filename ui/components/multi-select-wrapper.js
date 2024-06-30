@@ -6,6 +6,7 @@ import { MenuItem } from '@material-ui/core';
 import { Paper } from '@material-ui/core';
 import { Checkbox } from '@material-ui/core';
 import { FormControlLabel } from '@material-ui/core';
+import { colors } from '@layer5/sistent';
 
 const MultiSelectWrapper = (props) => {
   const [selectInput, setSelectInput] = useState('');
@@ -174,6 +175,10 @@ const MultiSelectWrapper = (props) => {
       '&$focused': {
         borderColor: '#00B39F',
       },
+    }),
+    input: (base) => ({
+      ...base,
+      color: theme.palette.type === 'dark' ? colors.light : colors.dark,
     }),
     menu: (base) => ({
       ...base,
