@@ -9,3 +9,4 @@ lib/
 cypress/
 tests/samples/
 **/__generated__/**
+rules/

@@ -30,7 +30,7 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  plugins: ['react', 'cypress', 'prettier'],
+  plugins: ['react', 'cypress', 'prettier', 'custom'],
   rules: {
     '@next/next/no-img-element': 'off',
     'react-hooks/rules-of-hooks': 'warn',
@@ -56,5 +56,6 @@ module.exports = {
     ],
     'react/prop-types': 'off',
     'prettier/prettier': ['error', { endOfLine: 'lf' }],
+    'custom/no-unclosed-graphql-ws-connections': 'error'
   },
 };
